@@ -12,7 +12,7 @@ public class ThreadDemo {
 			timmy.setSpeed(10);
 			tammy.setSpeed(10);
 			sammy.setSpeed(10);
-			
+			//
 			timmy.move(400);
 			tammy.move(400);
 			sammy.move(400);
