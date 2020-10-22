@@ -9,7 +9,7 @@ public class AdvancedRobotRace {
 	// Re-do the robot race recipe from level 3 module 0.
 	// This time, use threads to make all of the robots go at the same time.
 
-	static int amnt = 5;
+	static int amnt = 35;
 	static int finishLineY = 100;
 	static boolean finished = false;
 
@@ -17,7 +17,9 @@ public class AdvancedRobotRace {
 		MyRobot[] robots = new MyRobot[amnt];
 
 		for (int i = 0; i < robots.length; i++) {
-			robots[i] = new MyRobot((100 * i) + 100, 700);
+			robots[i] = new MyRobot((1530/(2*amnt)) + (1530 / amnt) * (i - (1 / 2)), 700);
+			robots[i].robot.hide();
+			robots[i].robot.penDown();
 		}
 
 		while (!finished) {

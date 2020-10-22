@@ -11,7 +11,7 @@ public class ThreadedGreeter implements Runnable {
 	@Override
 	public void run() {
 		System.out.println("this is thread" + num);
-		if(num <= 50) {
+		if(num < 50) {
 			Thread t = new Thread(new ThreadedGreeter(num + 1));
 			t.run();
 			try {

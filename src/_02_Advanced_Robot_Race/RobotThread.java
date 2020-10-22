@@ -16,7 +16,7 @@ public class RobotThread implements Runnable {
 
 	@Override
 	public void run() {
-		r.move(rand.nextInt(100) + 50);
+		r.move(rand.nextInt(50));
 	}
 
 }

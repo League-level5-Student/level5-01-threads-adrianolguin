@@ -16,7 +16,7 @@ public class MyRobot {
 	}
 
 	void startThread() {
-		System.out.println("started thread #" + counter);
+		//System.out.println("started thread #" + counter);
 		counter++;
 		thread.start();
 	}
